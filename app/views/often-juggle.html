@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="juggling-trick">Back</a>
+
+      <h1 class="heading-large">What days do you juggle on
+      </h1>
+
+      <form class="form" action="check-your-answers" method="post">
+        <div class="form-group">
+          <fieldset>
+
+    <legend>
+     <span class="body-text">Select all that apply</span>
+   </legend>
+
+            <div class="multiple-choice">
+              <input id="day-1" name="day" type="checkbox" value="Monday">
+              <label for="day-1">Monday</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="day-2" name="day" type="checkbox" value="Tuesday">
+              <label for="day-1">Tuesday</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="day-3" name="day" type="checkbox" value="Wednesday">
+              <label for="day-3">Wednesday</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="day-4" name="day" type="checkbox" value="Thursday">
+              <label for="day-4">Thursday</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="day-5" name="day" type="checkbox" value="Friday">
+              <label for="day-5">Friday</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="day-6" name="day" type="checkbox" value="Saturday">
+              <label for="day-5">Saturday</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="day-7" name="day" type="checkbox" value="Sunday">
+              <label for="day-7">Sunday</label>
+            </div>
+          </fieldset>
+        </div>
+
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
